@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    background: linear-gradient(to right, white,rgb(241, 235, 235));
+}
+
+.header{
+    padding:20px;
+    background-color: rgb(13, 13, 66);
+}
+
+.container{
+    margin-top: 50px;
+    flex:1;
+}
+
+.c{
+    color:rgb(67, 67, 139);
+}
+
+.center{
+    text-align: center;
+}
+
+table{
+    max-width: 300px;
+    width:100%;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th,td{
+    border: 3px solid black;
+    text-align: center;
+}
+
+.d1{
+    border-left: 0px;
+}
+.d2{
+    border-right: 0px;
+}
+.d3{
+    border-top: 0px;
+}
+.d4{
+    border-bottom: 0px;
+}
+
+.grid{
+    display: grid;
+    width:100%;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 50px;
+    gap:20px;
+}
+
+.item{
+    box-shadow: 1px 1px 5px rgb(79, 75, 75);
+    border-radius: 10px;
+    text-align: center;
+    padding:40px;
+}
+
+#footer{
+    padding-top: 10px;
+    background-color: rgb(13, 13, 66);
+    color: white;
+}
+
+.a1{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a2{
+    width: 100%;
+    text-align: center;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media  screen and (max-width:992px){
+    .dis{
+        font-size: 0px;
+    }  
+    .navbar-brand{
+        font-size:17px;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr !important; 
+    }
+    .btn{
+        margin-left: 30% !important;
+        margin-right: auto !important;
+    }
+    .a1{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .dis{
+        font-size: 0px;
+    }  
+    .navbar-brand{
+        font-size: 25px;
+    }
+    p{
+        font-size:10px;
+    }
+    .grid{
+        grid-template-columns: 1fr !important;
+    }
+    .btn{
+        margin-left: 20% !important;
+        margin-right: auto !important;
+    }
+    .a1{
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
+
+#darkmode{
+    border-radius: 5px;
+    background-color: rgb(13, 13, 66);
+    border: 2px solid black;
+    border-color: white;
+    color: white;
+}
+
+body.dark-mode .button1:hover {
+    background-color: #666 !important;
+    cursor: pointer;
+}
+
+body.dark-mode .button2:hover {
+    border-color: #888 !important;
+    color: #fff !important;
+    cursor: pointer;
+}
